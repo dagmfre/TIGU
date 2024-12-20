@@ -1,0 +1,103 @@
+#bd {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Ethiopic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(images/bg.png);
+  background-size: cover;
+  flex-direction: column;
+  position: relative;
+}
+
+.front-center {
+  color: #ffffff80;
+  text-align: center;
+  position: relative;
+  top: 2rem;
+  span {
+    color: #ebbb5f;
+  }
+  h1 {
+    font-size: 8rem;
+    margin: 0;
+  }
+  p {
+    font-size: 1.1rem;
+    max-width: 610px;
+    margin: 1rem auto 2rem;
+  }
+  button {
+    max-width: 200px;
+    width: 100%;
+    padding: 2px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: inherit;
+    border-color: #ebbb5f;
+  }
+}
+
+.front-contact {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: flex-end;
+  right: 3rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  a {
+    color: #ebbb5f;
+  }
+}
+
+.header {
+  padding-top: 2rem;
+  img {
+    max-width: 200px;
+  }
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline:before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+  transform-origin: bottom right;
+  width: 100%;
+  height: 2px;
+}
+
+.underline:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline.active:before {
+  transform: scaleX(
+    1
+  ); /* Ensure underline is always active for the current link */
+  transform-origin: bottom left;
+}
