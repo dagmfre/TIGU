@@ -36,7 +36,7 @@ function Navbar() {
     <AppBar className="header" sx={{ background: "none", boxShadow: "none" }} position="absolute">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src="static/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
 
           {/* Mobile View */}
           <Box
